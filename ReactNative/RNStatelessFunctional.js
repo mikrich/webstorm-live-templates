@@ -5,7 +5,7 @@ import {
   StyleSheet
 } from 'react-native'
 
-const #[[$Title$]]# = (props) => {
+const #[[$Title$]]# = ({...props}) => {
   return (
     <Text>Hi</Text>
   )
