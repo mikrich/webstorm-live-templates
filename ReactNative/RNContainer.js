@@ -9,7 +9,7 @@ import { connect } from 'react-redux'
 
 const StateProps = (state, ownProps) => {
   return {
-    ...ownProps,
+    ...ownProps
   }
 }
 
@@ -25,10 +25,7 @@ class #[[$Title$]]# extends Component {
   }
 }
 
-#[[$Title$]]#.propTypes = {
-  Route: React.PropTypes.object.isRequired,
-  Products: React.PropTypes.object.isRequired
-}
+#[[$Title$]]#.propTypes = {}
 
 const styles = StyleSheet.create({})
 
