@@ -9,4 +9,4 @@ A collection of live templates for React and React Native Projects
 
 - Open Webstorm (or quit and re-open)
 - Access Preferences > Editor > File and Code Templates
-- For each of the templates added ensure *Enable Live Templates" is Checked.
+- For each of the templates added ensure **Enable Live Templates** is Checked.
