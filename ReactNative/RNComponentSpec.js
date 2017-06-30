@@ -1,12 +1,13 @@
 import React from 'react'
-import #[[$Title$]]# from '../#[[$Title$]]#'
+import { shallow } from 'enzyme'
+import #[[$Title$]]# from './#[[$Title$]]#'
 
-import renderer from 'react-test-renderer'
-
-it('should render #[[$Title$]]# correctly', () => {
-  const tree = renderer.create(
+describe('#[[$Title$]]#', () => {
+  const wrapper = shallow(
     <#[[$Title$]]# />
-  ).toJSON()
+  )
 
-  expect(tree).toMatchSnapshot()
+  it('should render #[[$Title$]]# correctly', () => {
+    expect(wrapper).toMatchSnapshot()
+  })
 })
