@@ -1,5 +1,5 @@
-# webstorm-live-templates
-A collection of live templates for React and React Native Projects
+# webstorm-react-templates
+A collection of templates for React and React Native Projects
 
 ## setup
 
