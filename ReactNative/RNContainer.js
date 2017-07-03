@@ -1,8 +1,17 @@
+#set($componentName = "")
+#foreach($str in $Component.split("-"))
+#set($str = $str.substring(0,1).toUpperCase()+$str.substring(1))
+#set($componentName = $componentName + $str)
+#end
+// file-name: ${NAME}
+// formatted-componenet-name ${componentName}
+// unformatted-componenet-name ${Component}
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import {
   Text,
+  View,
   StyleSheet
 } from 'react-native'
 
@@ -18,16 +27,18 @@ const DispatchingProps = (dispatch, ownProps) => {
   return {}
 }
 
-class #[[$Title$]]# extends Component {
+class ${componentName} extends Component {
   render () {
     return (
-      <Text>Hi I'm a Container component</Text>
+      <View testID="${Component}">
+        <Text>Hi#[[$END$]]#</Text>
+      </View>
     )
   }
 }
 
-#[[$Title$]]#.propTypes = {}
+${componentName}.propTypes = {}
 
 const styles = StyleSheet.create({})
 
-export default connect(StateProps, DispatchingProps)(#[[$Title$]]#)
+export default connect(StateProps, DispatchingProps)(${componentName})
