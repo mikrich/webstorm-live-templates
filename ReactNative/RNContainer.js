@@ -1,31 +1,28 @@
 #set($componentName = "")
 #foreach($str in $Component.split("-"))
-#set($str = $str.substring(0,1).toUpperCase()+$str.substring(1))
-#set($componentName = $componentName + $str)
+  #set($str = $str.substring(0,1).toUpperCase()+$str.substring(1))
+  #set($componentName = $componentName + $str)
 #end
-// file-name: ${NAME}
-// formatted-componenet-name ${componentName}
-// unformatted-componenet-name ${Component}
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import {
   Text,
   View,
   StyleSheet
-} from 'react-native'
+} from 'react-native';
 
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
 const StateProps = (state, ownProps) => {
   return {
     ...ownProps
-  }
-}
+  };
+};
 
 const DispatchingProps = (dispatch, ownProps) => {
-  return {}
-}
+  return {};
+};
 
 class ${componentName} extends Component {
   render () {
@@ -33,12 +30,12 @@ class ${componentName} extends Component {
       <View testID="${Component}">
         <Text>Hi#[[$END$]]#</Text>
       </View>
-    )
+    );
   }
 }
 
-${componentName}.propTypes = {}
+${componentName}.propTypes = {};
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
 
-export default connect(StateProps, DispatchingProps)(${componentName})
+export default connect(StateProps, DispatchingProps)(${componentName});
