@@ -8,6 +8,9 @@
 #end
 #set($file = "${NAME}")
 #set($fileName = $file.split('\.').get(0))
+#if ($fileName == "index")
+  #set($fileName = '')
+#end
 import React from 'react';
 import { shallow } from 'enzyme';
 import ${componentName} from './${fileName}';
