@@ -25,7 +25,7 @@ index.test.js
 componentName.js
 componentName.spec.js
 ```
-- Enter compnenet name in **kebab-case**
+- Enter component name in **kebab-case**
 ```
 my-component-name
 ```
