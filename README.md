@@ -1,5 +1,5 @@
 # webstorm-react-templates
-A collection of templates for React and React Native Projects
+A collection of live templates for React and React Native Projects
 
 ## setup
 
@@ -15,19 +15,22 @@ A collection of templates for React and React Native Projects
 ## Usage
 
 ### input
-
 - Select **File > New > Template Name**
 - Enter file name for example:
 ```
 index.js
-index.spec.js 
+moduleName.js
+```
+- Test / spec files should share the same name as the module file
+```
+index.spec.js
+moduleName.spec.js
 index.test.js
-componentName.js
-componentName.spec.js
+moduleName.test.js
 ```
-- Enter component name in **kebab-case**
+- Enter module / componenet name in **kebab-case**
 ```
-my-component-name
+module-name
 ```
 - Press **OK** and template will be genenrated
 
